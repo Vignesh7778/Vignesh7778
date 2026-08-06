@@ -1,0 +1,114 @@
+<svg fill="none" viewBox="0 0 850 450" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Window Gradient -->
+    <linearGradient id="term-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="100%" stop-color="#05070c"/>
+    </linearGradient>
+
+    <!-- Header Gradient -->
+    <linearGradient id="term-header" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#161e2e"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Border Glow Gradient -->
+    <linearGradient id="term-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00FF66"/>
+      <stop offset="50%" stop-color="#00D2FF"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
+  </defs>
+
+  <style>
+    .prompt-user { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-weight: 700; fill: #00FF66; font-size: 13px; }
+    .prompt-path { font-family: 'JetBrains Mono', monospace; font-weight: 600; fill: #00D2FF; font-size: 13px; }
+    .prompt-symbol { font-family: 'JetBrains Mono', monospace; font-weight: 700; fill: #ffffff; font-size: 13px; }
+    .cmd-text { font-family: 'JetBrains Mono', monospace; font-weight: 600; fill: #f8fafc; font-size: 13px; }
+    .output-key { font-family: 'JetBrains Mono', monospace; font-weight: 700; fill: #94a3b8; font-size: 12px; }
+    .output-val { font-family: 'JetBrains Mono', monospace; font-weight: 500; fill: #e2e8f0; font-size: 12px; }
+    .output-highlight { font-family: 'JetBrains Mono', monospace; font-weight: 700; fill: #00FF66; font-size: 12px; }
+    .output-sec { font-family: 'JetBrains Mono', monospace; font-weight: 700; fill: #00D2FF; font-size: 12px; }
+    .term-title { font-family: 'JetBrains Mono', monospace; font-weight: 600; fill: #64748b; font-size: 12px; }
+    
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    .cursor { animation: blink 1s infinite; fill: #00FF66; }
+  </style>
+
+  <!-- Outer Window with Shadow & Border -->
+  <rect x="10" y="10" width="830" height="430" rx="12" fill="url(#term-bg)" stroke="url(#term-border)" stroke-width="1.5" filter="url(#shadow)"/>
+
+  <!-- Window Header Bar -->
+  <rect x="10" y="10" width="830" height="38" rx="12" fill="url(#term-header)"/>
+  <!-- Fix bottom corners of header -->
+  <rect x="10" y="36" width="830" height="12" fill="#0f172a"/>
+  <line x1="10" y1="48" x2="840" y2="48" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- macOS Control Buttons -->
+  <circle cx="32" cy="29" r="6" fill="#ff5f56"/>
+  <circle cx="52" cy="29" r="6" fill="#ffbd2e"/>
+  <circle cx="72" cy="29" r="6" fill="#27c93f"/>
+
+  <!-- Window Title -->
+  <text x="425" y="33" text-anchor="middle" class="term-title">vignesh@cyber-node:~ (zsh)</text>
+
+  <!-- Terminal Content Lines -->
+  <g transform="translate(30, 70)">
+    <!-- Line 1: whoami -->
+    <text x="0" y="0">
+      <tspan class="prompt-user">vignesh</tspan><tspan class="prompt-symbol">@</tspan><tspan class="prompt-path">cyber-node</tspan><tspan class="prompt-symbol">:~$ </tspan><tspan class="cmd-text">whoami</tspan>
+    </text>
+    <text x="15" y="20" class="output-highlight">Vignesh M <tspan class="output-val">(Java Full Stack Developer &amp; Cyber Security Engineer)</tspan></text>
+
+    <!-- Line 2: pwd -->
+    <text x="0" y="45">
+      <tspan class="prompt-user">vignesh</tspan><tspan class="prompt-symbol">@</tspan><tspan class="prompt-path">cyber-node</tspan><tspan class="prompt-symbol">:~$ </tspan><tspan class="cmd-text">pwd</tspan>
+    </text>
+    <text x="15" y="65" class="output-sec">/home/vignesh7778/engineering-workspace</text>
+
+    <!-- Line 3: cat education.txt -->
+    <text x="0" y="90">
+      <tspan class="prompt-user">vignesh</tspan><tspan class="prompt-symbol">@</tspan><tspan class="prompt-path">cyber-node</tspan><tspan class="prompt-symbol">:~$ </tspan><tspan class="cmd-text">cat education.txt</tspan>
+    </text>
+    <text x="15" y="110" class="output-val">B.E. Computer Science Engineering (Specialization: Cyber Security)</text>
+
+    <!-- Line 4: java --version -->
+    <text x="0" y="135">
+      <tspan class="prompt-user">vignesh</tspan><tspan class="prompt-symbol">@</tspan><tspan class="prompt-path">cyber-node</tspan><tspan class="prompt-symbol">:~$ </tspan><tspan class="cmd-text">java --version</tspan>
+    </text>
+    <text x="15" y="155" class="output-sec">openjdk 21.0.2 LTS (build 21.0.2+13-LTS) Java SE Runtime Environment</text>
+
+    <!-- Line 5: git status -->
+    <text x="0" y="180">
+      <tspan class="prompt-user">vignesh</tspan><tspan class="prompt-symbol">@</tspan><tspan class="prompt-path">cyber-node</tspan><tspan class="prompt-symbol">:~$ </tspan><tspan class="cmd-text">git status</tspan>
+    </text>
+    <text x="15" y="200" class="output-highlight">On branch main: 0 vulnerabilities | 100% test coverage | System Hardened [SECURE]</text>
+
+    <!-- Line 6: ls projects -->
+    <text x="0" y="225">
+      <tspan class="prompt-user">vignesh</tspan><tspan class="prompt-symbol">@</tspan><tspan class="prompt-path">cyber-node</tspan><tspan class="prompt-symbol">:~$ </tspan><tspan class="cmd-text">ls -l projects/</tspan>
+    </text>
+    <text x="15" y="245" class="output-val">CropLedger/  CyberSec-EduSuite/  TLS-Security-Lab/  Restaurant-Booking/</text>
+
+    <!-- Line 7: uptime & cursor -->
+    <text x="0" y="270">
+      <tspan class="prompt-user">vignesh</tspan><tspan class="prompt-symbol">@</tspan><tspan class="prompt-path">cyber-node</tspan><tspan class="prompt-symbol">:~$ </tspan><tspan class="cmd-text">uptime</tspan>
+    </text>
+    <text x="15" y="290" class="output-highlight">20:47:00 up 999 days, 0 load average | [ACTIVE] READY TO BUILD</text>
+
+    <!-- Command Prompt Cursor Line -->
+    <g transform="translate(0, 320)">
+      <text x="0" y="0">
+        <tspan class="prompt-user">vignesh</tspan><tspan class="prompt-symbol">@</tspan><tspan class="prompt-path">cyber-node</tspan><tspan class="prompt-symbol">:~$ </tspan>
+      </text>
+      <rect x="175" y="-12" width="8" height="15" class="cursor"/>
+    </g>
+  </g>
+</svg>

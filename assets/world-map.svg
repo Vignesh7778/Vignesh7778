@@ -1,0 +1,56 @@
+<svg fill="none" viewBox="0 0 950 300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="map-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070a"/>
+      <stop offset="100%" stop-color="#0d1117"/>
+    </linearGradient>
+    <filter id="map-glow" x="-10%" y="-10%" width="120%" height="120%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <rect width="950" height="300" rx="16" fill="url(#map-bg)"/>
+  
+  <!-- Cyber Grid Background -->
+  <g stroke="#00D2FF" stroke-opacity="0.05" stroke-width="1">
+    <line x1="0" y1="50" x2="950" y2="50"/>
+    <line x1="0" y1="100" x2="950" y2="100"/>
+    <line x1="0" y1="150" x2="950" y2="150"/>
+    <line x1="0" y1="200" x2="950" y2="200"/>
+    <line x1="0" y1="250" x2="950" y2="250"/>
+    <line x1="150" y1="0" x2="150" y2="300"/>
+    <line x1="300" y1="0" x2="300" y2="300"/>
+    <line x1="450" y1="0" x2="450" y2="300"/>
+    <line x1="600" y1="0" x2="600" y2="300"/>
+    <line x1="750" y1="0" x2="750" y2="300"/>
+  </g>
+
+  <!-- Node Ping Connections (India Node Highlighted) -->
+  <!-- India Hub (670, 160) -->
+  <circle cx="670" cy="160" r="10" fill="#00FF66" fill-opacity="0.2" filter="url(#map-glow)"/>
+  <circle cx="670" cy="160" r="4" fill="#00FF66" filter="url(#map-glow)"/>
+
+  <!-- US Hub (220, 120) -->
+  <circle cx="220" cy="120" r="3" fill="#00D2FF"/>
+  <!-- Europe Hub (470, 100) -->
+  <circle cx="470" cy="100" r="3" fill="#00D2FF"/>
+  <!-- Asia East Hub (780, 140) -->
+  <circle cx="780" cy="140" r="3" fill="#00D2FF"/>
+
+  <!-- Connecting Curved Cyber Arcs -->
+  <path d="M 220 120 Q 445 60 670 160" stroke="#00D2FF" stroke-width="1.5" stroke-dasharray="4,4" fill="none" opacity="0.6"/>
+  <path d="M 470 100 Q 570 120 670 160" stroke="#00FF66" stroke-width="1.5" stroke-dasharray="4,4" fill="none" opacity="0.8"/>
+  <path d="M 670 160 Q 725 140 780 140" stroke="#00D2FF" stroke-width="1.5" stroke-dasharray="4,4" fill="none" opacity="0.6"/>
+
+  <!-- Map Overlay Text -->
+  <text x="670" y="190" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="11px" font-weight="700" fill="#00FF66">
+    📍 PRIMARY NODE // TAMIL NADU, INDIA
+  </text>
+  <text x="670" y="208" text-anchor="middle" font-family="'Inter', sans-serif" font-size="11px" fill="#94a3b8">
+    Global Collaboration &amp; Remote Engineering Ready
+  </text>
+</svg>

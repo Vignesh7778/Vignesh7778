@@ -1,0 +1,153 @@
+<svg fill="none" viewBox="0 0 950 340" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <!-- Background Gradient -->
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#05070a"/>
+      <stop offset="50%" stop-color="#0b0f19"/>
+      <stop offset="100%" stop-color="#030508"/>
+    </linearGradient>
+
+    <!-- Neon Green Glow Gradient -->
+    <linearGradient id="neon-green-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FF66"/>
+      <stop offset="100%" stop-color="#00D2FF"/>
+    </linearGradient>
+
+    <!-- Cyber Blue Glow Gradient -->
+    <linearGradient id="cyber-blue-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00D2FF"/>
+      <stop offset="100%" stop-color="#3b82f6"/>
+    </linearGradient>
+
+    <!-- Card Background Gradient -->
+    <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#121826" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0a0d14" stop-opacity="0.95"/>
+    </linearGradient>
+
+    <!-- Grid Pattern -->
+    <pattern id="cyber-grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#00D2FF" stroke-opacity="0.04" stroke-width="1"/>
+      <circle cx="40" cy="40" r="1" fill="#00FF66" fill-opacity="0.15"/>
+    </pattern>
+
+    <!-- Glow Filter -->
+    <filter id="glow" x="-20%" y="-20%" width="140%" height="140%">
+      <feGaussianBlur stdDeviation="8" result="blur" />
+      <feComposite in="SourceGraphic" in2="blur" operator="over"/>
+    </filter>
+    
+    <filter id="intense-glow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="15" result="blur1" />
+      <feGaussianBlur stdDeviation="5" result="blur2" />
+      <feMerge>
+        <feMergeNode in="blur1" />
+        <feMergeNode in="blur2" />
+        <feMergeNode in="SourceGraphic" />
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    .title-main { font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif; font-weight: 900; fill: #ffffff; letter-spacing: 4px; font-size: 42px; }
+    .title-sub { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-weight: 600; fill: #00FF66; letter-spacing: 2px; font-size: 14px; }
+    .text-muted { font-family: 'Inter', sans-serif; fill: #94a3b8; font-size: 13px; font-weight: 500; }
+    .badge-text { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 700; fill: #00D2FF; letter-spacing: 1px; }
+    .status-text { font-family: 'JetBrains Mono', monospace; font-size: 11px; font-weight: 600; fill: #00FF66; }
+    .glow-line { stroke: url(#neon-green-glow); stroke-width: 2; }
+    .card-border { stroke: #1e293b; stroke-width: 1.5; }
+    
+    @keyframes pulse {
+      0% { opacity: 0.3; }
+      50% { opacity: 0.9; }
+      100% { opacity: 0.3; }
+    }
+    .pulse-elem { animation: pulse 3s infinite ease-in-out; }
+  </style>
+
+  <!-- Base Canvas Background -->
+  <rect width="950" height="340" rx="16" fill="url(#bg-grad)"/>
+  
+  <!-- Cyber Grid Background -->
+  <rect width="950" height="340" rx="16" fill="url(#cyber-grid)"/>
+
+  <!-- Top Accent Glowing Line -->
+  <path d="M 0 16 C 0 7.163 7.163 0 16 0 L 934 0 C 942.837 0 950 7.163 950 16 L 950 3 L 0 3 Z" fill="url(#neon-green-glow)" filter="url(#glow)"/>
+
+  <!-- Background Decorative Glowing Orbs -->
+  <circle cx="850" cy="80" r="140" fill="#00D2FF" fill-opacity="0.04" filter="url(#glow)" class="pulse-elem"/>
+  <circle cx="100" cy="260" r="120" fill="#00FF66" fill-opacity="0.04" filter="url(#glow)" class="pulse-elem"/>
+
+  <!-- Futuristic Corner Frame Elements -->
+  <!-- Top Left -->
+  <path d="M 25 45 L 25 25 L 45 25" stroke="#00FF66" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Top Right -->
+  <path d="M 925 45 L 925 25 L 905 25" stroke="#00D2FF" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Bottom Left -->
+  <path d="M 25 295 L 25 315 L 45 315" stroke="#00D2FF" stroke-width="2" fill="none" stroke-linecap="round"/>
+  <!-- Bottom Right -->
+  <path d="M 925 295 L 925 315 L 905 315" stroke="#00FF66" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+  <!-- System Status Badge (Top Right) -->
+  <g transform="translate(680, 35)">
+    <rect x="0" y="0" width="235" height="30" rx="15" fill="#0d1520" stroke="#00FF66" stroke-opacity="0.4" stroke-width="1"/>
+    <circle cx="18" cy="15" r="4" fill="#00FF66" filter="url(#glow)"/>
+    <circle cx="18" cy="15" r="2" fill="#ffffff"/>
+    <text x="32" y="19" class="status-text">SYSTEM ONLINE // SECURE</text>
+  </g>
+
+  <!-- Core Content Container -->
+  <!-- Left Side: Main Title & Specs -->
+  <g transform="translate(50, 65)">
+    <!-- Terminal Tag -->
+    <g transform="translate(0, 0)">
+      <rect x="0" y="0" width="195" height="26" rx="6" fill="#162232" stroke="#00D2FF" stroke-opacity="0.4"/>
+      <text x="12" y="17" class="badge-text">VIGNESH7778 / EXEC</text>
+    </g>
+
+    <!-- Main Title -->
+    <text x="0" y="70" class="title-main">VIGNESH M</text>
+    
+    <!-- Subtitle -->
+    <text x="0" y="96" class="title-sub">JAVA FULL STACK ENGINEER &amp; CYBERSECURITY SPECIALIST</text>
+
+    <!-- Description Lines -->
+    <text x="0" y="125" class="text-muted">Building secure, high-performance enterprise applications &amp; modern web platforms.</text>
+    <text x="0" y="145" class="text-muted">Specializing in Java, Spring, Angular, React, Vulnerability Analysis &amp; OWASP Standards.</text>
+
+    <!-- Tech Stack Pill Badges -->
+    <g transform="translate(0, 168)">
+      <!-- Badge 1: B.E. Cyber Security -->
+      <rect x="0" y="0" width="165" height="28" rx="14" fill="#0f172a" stroke="#00FF66" stroke-width="1.2"/>
+      <text x="14" y="18" font-family="'JetBrains Mono', monospace" font-size="11px" font-weight="700" fill="#00FF66">B.E. CYBER SECURITY</text>
+
+      <!-- Badge 2: Java Full Stack -->
+      <rect x="175" y="0" width="160" height="28" rx="14" fill="#0f172a" stroke="#00D2FF" stroke-width="1.2"/>
+      <text x="189" y="18" font-family="'JetBrains Mono', monospace" font-size="11px" font-weight="700" fill="#00D2FF">JAVA FULL STACK</text>
+
+      <!-- Badge 3: Open Source -->
+      <rect x="345" y="0" width="145" height="28" rx="14" fill="#0f172a" stroke="#94a3b8" stroke-width="1.2"/>
+      <text x="359" y="18" font-family="'JetBrains Mono', monospace" font-size="11px" font-weight="700" fill="#ffffff">OPEN SOURCE</text>
+    </g>
+  </g>
+
+  <!-- Right Side Visual Feature Cards (Metrics Grid) -->
+  <g transform="translate(615, 85)">
+    <!-- Card 1: Core Stack -->
+    <rect x="0" y="0" width="280" height="68" rx="10" fill="url(#card-grad)" class="card-border"/>
+    <path d="M 0 10 Q 0 0 10 0 L 280 0 L 280 4 L 0 4 Z" fill="url(#neon-green-glow)"/>
+    <text x="18" y="26" font-family="'JetBrains Mono', monospace" font-size="11px" font-weight="700" fill="#94a3b8">PRIMARY TECH STACK</text>
+    <text x="18" y="48" font-family="'Inter', sans-serif" font-size="14px" font-weight="800" fill="#ffffff">Java • Angular • React • Python</text>
+
+    <!-- Card 2: Security Domain -->
+    <rect x="0" y="78" width="280" height="68" rx="10" fill="url(#card-grad)" class="card-border"/>
+    <path d="M 0 88 Q 0 78 10 78 L 280 78 L 280 82 L 0 82 Z" fill="url(#cyber-blue-glow)"/>
+    <text x="18" y="104" font-family="'JetBrains Mono', monospace" font-size="11px" font-weight="700" fill="#94a3b8">SECURITY &amp; COMPLIANCE</text>
+    <text x="18" y="126" font-family="'Inter', sans-serif" font-size="14px" font-weight="800" fill="#00D2FF">OWASP • Linux • Network Sec</text>
+  </g>
+
+  <!-- Bottom Accent Divider Line -->
+  <line x1="50" y1="305" x2="900" y2="305" stroke="#1e293b" stroke-width="1"/>
+  <line x1="50" y1="305" x2="350" y2="305" stroke="url(#neon-green-glow)" stroke-width="2" filter="url(#glow)"/>
+  <line x1="600" y1="305" x2="900" y2="305" stroke="url(#cyber-blue-glow)" stroke-width="2" filter="url(#glow)"/>
+</svg>
