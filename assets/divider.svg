@@ -1,12 +1,20 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 4" width="100%" height="4">
+<svg fill="none" viewBox="0 0 950 20" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="laserGrad" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#0D1117"/>
-      <stop offset="20%" stop-color="#00FF66"/>
-      <stop offset="50%" stop-color="#00D2FF"/>
-      <stop offset="80%" stop-color="#00FF66"/>
-      <stop offset="100%" stop-color="#0D1117"/>
+    <linearGradient id="divider-grad" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#00FF66" stop-opacity="0"/>
+      <stop offset="15%" stop-color="#00FF66" stop-opacity="0.8"/>
+      <stop offset="50%" stop-color="#00D2FF" stop-opacity="1"/>
+      <stop offset="85%" stop-color="#00FF66" stop-opacity="0.8"/>
+      <stop offset="100%" stop-color="#00FF66" stop-opacity="0"/>
     </linearGradient>
+    <filter id="glow-div" x="-20%" y="-100%" width="140%" height="300%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
   </defs>
-  <rect width="1000" height="4" fill="url(#laserGrad)"/>
+  <line x1="0" y1="10" x2="950" y2="10" stroke="url(#divider-grad)" stroke-width="2" filter="url(#glow-div)"/>
+  <polygon points="475,4 481,10 475,16 469,10" fill="#00FF66" filter="url(#glow-div)"/>
 </svg>

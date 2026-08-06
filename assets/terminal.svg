@@ -1,53 +1,114 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="100%" height="100%">
+<svg fill="none" viewBox="0 0 850 450" xmlns="http://www.w3.org/2000/svg">
   <defs>
-    <linearGradient id="termBg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#161B22"/>
-      <stop offset="100%" stop-color="#0D1117"/>
+    <!-- Window Gradient -->
+    <linearGradient id="term-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0e17"/>
+      <stop offset="100%" stop-color="#05070c"/>
     </linearGradient>
+
+    <!-- Header Gradient -->
+    <linearGradient id="term-header" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#161e2e"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+
+    <!-- Border Glow Gradient -->
+    <linearGradient id="term-border" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00FF66"/>
+      <stop offset="50%" stop-color="#00D2FF"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+
+    <filter id="shadow" x="-5%" y="-5%" width="110%" height="110%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.8"/>
+    </filter>
   </defs>
+
   <style>
-    .term-text { font-family: 'JetBrains Mono', monospace; font-size: 13px; fill: #C9D1D9; }
-    .green { fill: #00FF66; font-weight: bold; }
-    .cyan { fill: #00D2FF; }
-    .yellow { fill: #FFBD2E; }
-    .dim { fill: #8B949E; }
-
-    .line-anim { opacity: 0; animation: fadeIn 0.4s ease-forward forwards; }
-    .l1 { animation-delay: 0.2s; }
-    .l2 { animation-delay: 0.5s; }
-    .l3 { animation-delay: 0.8s; }
-    .l4 { animation-delay: 1.1s; }
-    .l5 { animation-delay: 1.4s; }
-    .l6 { animation-delay: 1.7s; }
-    .l7 { animation-delay: 2.0s; }
-    .l8 { animation-delay: 2.3s; }
-    .l9 { animation-delay: 2.6s; }
-
-    @keyframes fadeIn { 0% { opacity: 0; } 100% { opacity: 1; } }
-
-    .blinker { fill: #00FF66; animation: blink 1s step-start infinite; }
-    @keyframes blink { 50% { opacity: 0; } }
+    .prompt-user { font-family: 'JetBrains Mono', 'Fira Code', monospace; font-weight: 700; fill: #00FF66; font-size: 13px; }
+    .prompt-path { font-family: 'JetBrains Mono', monospace; font-weight: 600; fill: #00D2FF; font-size: 13px; }
+    .prompt-symbol { font-family: 'JetBrains Mono', monospace; font-weight: 700; fill: #ffffff; font-size: 13px; }
+    .cmd-text { font-family: 'JetBrains Mono', monospace; font-weight: 600; fill: #f8fafc; font-size: 13px; }
+    .output-key { font-family: 'JetBrains Mono', monospace; font-weight: 700; fill: #94a3b8; font-size: 12px; }
+    .output-val { font-family: 'JetBrains Mono', monospace; font-weight: 500; fill: #e2e8f0; font-size: 12px; }
+    .output-highlight { font-family: 'JetBrains Mono', monospace; font-weight: 700; fill: #00FF66; font-size: 12px; }
+    .output-sec { font-family: 'JetBrains Mono', monospace; font-weight: 700; fill: #00D2FF; font-size: 12px; }
+    .term-title { font-family: 'JetBrains Mono', monospace; font-weight: 600; fill: #64748b; font-size: 12px; }
+    
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0; }
+    }
+    .cursor { animation: blink 1s infinite; fill: #00FF66; }
   </style>
 
-  <rect width="900" height="320" rx="10" fill="url(#termBg)" stroke="#30363D" stroke-width="1.5"/>
-  <rect x="0" y="0" width="900" height="36" rx="10" fill="#21262D"/>
-  <circle cx="20" cy="18" r="6" fill="#FF5F56"/>
-  <circle cx="38" cy="18" r="6" fill="#FFBD2E"/>
-  <circle cx="56" cy="18" r="6" fill="#27C93F"/>
-  <text x="76" y="22" class="dim" font-family="monospace" font-size="12">vicky@ubuntu: ~$ ./system_diagnostics.sh</text>
+  <!-- Outer Window with Shadow & Border -->
+  <rect x="10" y="10" width="830" height="430" rx="12" fill="url(#term-bg)" stroke="url(#term-border)" stroke-width="1.5" filter="url(#shadow)"/>
 
-  <g transform="translate(25, 65)" class="term-text">
-    <text y="0" class="green line-anim l1">vicky@ubuntu:~$ systemctl status developer-profile.service</text>
-    <text y="24" class="dim line-anim l2">● developer-profile.service - Vicky Profile Daemon</text>
-    <text y="44" class="line-anim l3">   Loaded: <tspan class="green">loaded</tspan> (/etc/systemd/system/developer-profile.service; enabled)</text>
-    <text y="64" class="line-anim l4">   Active: <tspan class="green">active (running)</tspan> since 2026-08-06</text>
-    <text y="84" class="line-anim l5">   Tasks: 42 (limit: 4915)</text>
-    <text y="104" class="line-anim l6">   Memory: 128.4M [████████████████████████████████░░░] 88%</text>
-    <text y="130" class="cyan line-anim l7">------------------------------------------------------------------------</text>
-    <text y="152" class="line-anim l8"><tspan class="green">[✓] KERNEL ROLE</tspan>     : Full Stack Developer &amp; Cybersecurity Specialist</text>
-    <text y="174" class="line-anim l8"><tspan class="green">[✓] BACKEND STACK</tspan>   : Java, Spring Boot, REST APIs, Hibernate, MySQL</text>
-    <text y="196" class="line-anim l8"><tspan class="green">[✓] FRONTEND STACK</tspan>  : Angular, React, JavaScript (ES6+), HTML5, CSS3</text>
-    <text y="218" class="line-anim l8"><tspan class="green">[✓] SECURITY VECTOR</tspan> : Application Hardening, Cryptography, OWASP Audits</text>
-    <text y="240" class="yellow line-anim l9">vicky@ubuntu:~$ <tspan class="blinker">█</tspan></text>
+  <!-- Window Header Bar -->
+  <rect x="10" y="10" width="830" height="38" rx="12" fill="url(#term-header)"/>
+  <!-- Fix bottom corners of header -->
+  <rect x="10" y="36" width="830" height="12" fill="#0f172a"/>
+  <line x1="10" y1="48" x2="840" y2="48" stroke="#1e293b" stroke-width="1"/>
+
+  <!-- macOS Control Buttons -->
+  <circle cx="32" cy="29" r="6" fill="#ff5f56"/>
+  <circle cx="52" cy="29" r="6" fill="#ffbd2e"/>
+  <circle cx="72" cy="29" r="6" fill="#27c93f"/>
+
+  <!-- Window Title -->
+  <text x="425" y="33" text-anchor="middle" class="term-title">vignesh@cyber-node:~ (zsh)</text>
+
+  <!-- Terminal Content Lines -->
+  <g transform="translate(30, 70)">
+    <!-- Line 1: whoami -->
+    <text x="0" y="0">
+      <tspan class="prompt-user">vignesh</tspan><tspan class="prompt-symbol">@</tspan><tspan class="prompt-path">cyber-node</tspan><tspan class="prompt-symbol">:~$ </tspan><tspan class="cmd-text">whoami</tspan>
+    </text>
+    <text x="15" y="20" class="output-highlight">Vignesh M <tspan class="output-val">(Java Full Stack Developer &amp; Cyber Security Engineer)</tspan></text>
+
+    <!-- Line 2: pwd -->
+    <text x="0" y="45">
+      <tspan class="prompt-user">vignesh</tspan><tspan class="prompt-symbol">@</tspan><tspan class="prompt-path">cyber-node</tspan><tspan class="prompt-symbol">:~$ </tspan><tspan class="cmd-text">pwd</tspan>
+    </text>
+    <text x="15" y="65" class="output-sec">/home/vignesh7778/engineering-workspace</text>
+
+    <!-- Line 3: cat education.txt -->
+    <text x="0" y="90">
+      <tspan class="prompt-user">vignesh</tspan><tspan class="prompt-symbol">@</tspan><tspan class="prompt-path">cyber-node</tspan><tspan class="prompt-symbol">:~$ </tspan><tspan class="cmd-text">cat education.txt</tspan>
+    </text>
+    <text x="15" y="110" class="output-val">B.E. Computer Science Engineering (Specialization: Cyber Security)</text>
+
+    <!-- Line 4: java --version -->
+    <text x="0" y="135">
+      <tspan class="prompt-user">vignesh</tspan><tspan class="prompt-symbol">@</tspan><tspan class="prompt-path">cyber-node</tspan><tspan class="prompt-symbol">:~$ </tspan><tspan class="cmd-text">java --version</tspan>
+    </text>
+    <text x="15" y="155" class="output-sec">openjdk 21.0.2 LTS (build 21.0.2+13-LTS) Java SE Runtime Environment</text>
+
+    <!-- Line 5: git status -->
+    <text x="0" y="180">
+      <tspan class="prompt-user">vignesh</tspan><tspan class="prompt-symbol">@</tspan><tspan class="prompt-path">cyber-node</tspan><tspan class="prompt-symbol">:~$ </tspan><tspan class="cmd-text">git status</tspan>
+    </text>
+    <text x="15" y="200" class="output-highlight">On branch main: 0 vulnerabilities | 100% test coverage | System Hardened [SECURE]</text>
+
+    <!-- Line 6: ls projects -->
+    <text x="0" y="225">
+      <tspan class="prompt-user">vignesh</tspan><tspan class="prompt-symbol">@</tspan><tspan class="prompt-path">cyber-node</tspan><tspan class="prompt-symbol">:~$ </tspan><tspan class="cmd-text">ls -l projects/</tspan>
+    </text>
+    <text x="15" y="245" class="output-val">CropLedger/  CyberSec-EduSuite/  TLS-Security-Lab/  Restaurant-Booking/</text>
+
+    <!-- Line 7: uptime & cursor -->
+    <text x="0" y="270">
+      <tspan class="prompt-user">vignesh</tspan><tspan class="prompt-symbol">@</tspan><tspan class="prompt-path">cyber-node</tspan><tspan class="prompt-symbol">:~$ </tspan><tspan class="cmd-text">uptime</tspan>
+    </text>
+    <text x="15" y="290" class="output-highlight">20:47:00 up 999 days, 0 load average | [ACTIVE] READY TO BUILD</text>
+
+    <!-- Command Prompt Cursor Line -->
+    <g transform="translate(0, 320)">
+      <text x="0" y="0">
+        <tspan class="prompt-user">vignesh</tspan><tspan class="prompt-symbol">@</tspan><tspan class="prompt-path">cyber-node</tspan><tspan class="prompt-symbol">:~$ </tspan>
+      </text>
+      <rect x="175" y="-12" width="8" height="15" class="cursor"/>
+    </g>
   </g>
 </svg>

@@ -1,31 +1,17 @@
 <div align="center">
 
-<!-- Local Animated Hero Header SVG -->
-<img src="assets/hero.svg" alt="Vicky Terminal Hero" width="100%" />
+<!-- Hero Banner Header -->
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,40:161b22,100:00ff66&height=220&section=header&text=VIGNESH%20M&fontSize=65&fontColor=00ff66&animation=twinkling&desc=Full%20Stack%20Developer%20%7C%20Cybersecurity%20Enthusiast%20%7C%20Problem%20Solver%20%7C%20Passionate%20about%20Java&descSize=18&descAlign=50&descAlignY=70" alt="Terminal Hero Banner" width="100%" />
 
 <br/>
 
 ```text
 ┌────────────────────────────────────────────────────────────────────────────────────────┐
-│ [0.000000] Linux kernel 6.8.0-vignesh-custom-x86_64 #1 SMP PREEMPT_DYNAMIC             │
-│ [0.042100] Initializing Developer Environment...                           [ OK ]      │
-│ [0.108420] Mounting File System /dev/nvme0n1p2 (Ext4)...                   [ OK ]      │
-│ [0.254190] Establishing Secure Handshake with github.com/Vignesh7778...    [ OK ]      │
-│ [0.412080] Loading Security Modules & Neural AI Pipelines...               [ OK ]      │
-│ [0.589120] Welcome to Ubuntu 24.04.1 LTS (GNU/Linux 6.8.0-custom-vignesh)              │
-│ [0.720150] User Session Authenticated: vignesh@ubuntu-terminal                         │
+│  vignesh@github-terminal:~$ whoami                                                     │
 └────────────────────────────────────────────────────────────────────────────────────────┘
 ```
 
-<br/>
-
-```text
-┌────────────────────────────────────────────────────────────────────────────────────────┐
-│ vignesh@ubuntu:~$ whoami                                                               │
-└────────────────────────────────────────────────────────────────────────────────────────┘
-```
-
-# 👋 Hi, I'm Vicky <img src="https://raw.githubusercontent.com/MartinLaxenaire/MartinLaxenaire/main/src/waving-hand.gif" width="35px" alt="Waving Hand" />
+# 👋 Hi, I'm Vignesh M <img src="https://raw.githubusercontent.com/MartinLaxenaire/MartinLaxenaire/main/src/waving-hand.gif" width="35px" alt="Waving Hand" />
 
 <a href="https://github.com/Vignesh7778">
   <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&size=24&duration=3000&pause=1000&color=00FF66&center=true&vCenter=true&width=850&lines=%F0%9F%92%BB+Full+Stack+Developer;%F0%9F%94%92+Cybersecurity+Enthusiast;%F0%9F%A9%B9+Problem+Solver;%E2%98%95+Passionate+about+Java" alt="Animated Typing Banner" />
@@ -35,26 +21,26 @@
 
 <!-- Real-time Status Badges -->
 <a href="https://github.com/Vignesh7778">
-  <img src="https://komarev.com/ghpvc/?username=Vignesh7778&color=00ff66&style=for-the-badge&label=TERMINAL+VISITORS" alt="Profile Views" />
+  <img src="https://komarev.com/ghpvc/?username=Vignesh7778&color=00ff66&style=for-the-badge&label=PROFILE+VIEWS" alt="Profile Views" />
 </a>
 <a href="https://github.com/Vignesh7778?tab=followers">
   <img src="https://img.shields.io/github/followers/Vignesh7778?label=FOLLOWERS&style=for-the-badge&color=00D2FF&logo=github&logoColor=white" alt="GitHub Followers" />
 </a>
 <a href="https://github.com/Vignesh7778">
-  <img src="https://img.shields.io/badge/KERNEL%20SECURITY-SYSTEM%20HARDENED-00FF66?style=for-the-badge&logo=shield&logoColor=black" alt="Security Status" />
+  <img src="https://img.shields.io/badge/SECURITY%20STATUS-HARDENED-00FF66?style=for-the-badge&logo=shield&logoColor=black" alt="Security Status" />
 </a>
 <a href="https://github.com/Vignesh7778">
-  <img src="https://img.shields.io/badge/SESSION%20STATUS-OPEN%20FOR%20HIRE-00D2FF?style=for-the-badge&logo=briefcase&logoColor=white" alt="Hire Status" />
+  <img src="https://img.shields.io/badge/STATUS-OPEN%20FOR%20HIRE-00D2FF?style=for-the-badge&logo=briefcase&logoColor=white" alt="Hire Status" />
 </a>
 
 <br/><br/>
 
 <!-- Quick CTA Buttons -->
-<a href="#-execute-cat-aboutmd">
-  <img src="https://img.shields.io/badge/%F0%9F%9A%80_RUN_./EXPLORE.SH-00FF66?style=for-the-badge&logoColor=black" alt="Explore CTA" />
+<a href="#-explore-my-work">
+  <img src="https://img.shields.io/badge/%F0%9F%9A%80_EXPLORE_MY_WORK-00FF66?style=for-the-badge&logoColor=black" alt="Explore My Work CTA" />
 </a>
 <a href="https://new-portfolio-gold-alpha.vercel.app">
-  <img src="https://img.shields.io/badge/%F0%9F%8C%90_LAUNCH_LIVE_PORTFOLIO-161B22?style=for-the-badge&logo=vercel&logoColor=00FF66" alt="Live Portfolio" />
+  <img src="https://img.shields.io/badge/%F0%9F%8C%90_LIVE_PORTFOLIO-161B22?style=for-the-badge&logo=vercel&logoColor=00FF66" alt="Live Portfolio" />
 </a>
 <a href="https://www.linkedin.com/in/vignesh-murali-dharan/">
   <img src="https://img.shields.io/badge/LinkedIn-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
@@ -68,88 +54,70 @@
 <br/>
 
 <div align="center">
-  <img src="assets/divider.svg" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117,161b22,00ff66&height=3" width="100%" />
   <br/>
-  <sub>↓ <b>SCROLL TO EXECUTE TERMINAL COMMAND PIPELINE</b> ↓</sub>
+  <sub>↓ <b>SCROLL TO EXECUTE COMMANDS</b> ↓</sub>
 </div>
 
 <br/>
 
 ---
 
-## 🖥️ Command 01: `$ uname -a` & `$ cat /etc/os-release`
-
-```bash
-vignesh@ubuntu:~$ uname -a && cat /etc/os-release
-```
+## ⚡ Quick Executive Summary (For Recruiters)
 
 <div align="center">
 
-<img src="assets/portrait.svg" alt="Animated ASCII Portrait Terminal" width="48%" />
-&nbsp;
-<img src="assets/wordmark.svg" alt="3D Animated Wordmark Terminal" width="48%" />
-
-<br/><br/>
-
-<img src="assets/terminal.svg" alt="Terminal System Diagnostics" width="98%" />
-
-<br/><br/>
-
-| System Property | Developer Diagnostics & Specifications |
+| Metric / Attribute | Developer Profile Snapshot |
 | :--- | :--- |
-| 👤 **User Identifier** | **Vicky** (`vignesh@ubuntu-terminal`) |
-| 🎓 **Academic Status** | **B.E. Computer Science & Engineering (Specialization: Cyber Security)** — Final Year Student |
-| 💻 **Core Identity** | **Full Stack Developer** & **Software Engineer** |
-| ☕ **Primary Language** | **Java (JDK 17 / JDK 21)** & **Spring Boot Microservices** |
-| 🎨 **Frontend Architecture** | **Angular, React, JavaScript (ES6+), HTML5, CSS3, TailwindCSS** |
-| 🛡️ **Cyber Security Vector** | **Application Hardening, Cryptography, OWASP Auditing, Network Defense** |
-| 🤖 **Artificial Intelligence** | **Autonomous AI Agents, Prompt Engineering, LLM Pipeline Integrations** |
-| 🖥️ **Operating Environment** | **Ubuntu 24.04.1 LTS x86_64 (Linux Kernel 6.8.0)** |
+| 🎓 **Degree & Specialization** | **B.E. Computer Science & Engineering (Specialization: Cyber Security)** — Final Year Student |
+| ☕ **Core Engineering Stack** | **Java (JDK 17/21), Spring Boot, REST Microservices, Hibernate/JPA, MySQL** |
+| 💻 **Frontend Stack** | **Angular, React, JavaScript (ES6+), HTML5, Vanilla CSS, TailwindCSS** |
+| 🛡️ **Cyber Security Focus** | **Application Hardening, Cryptography, OWASP Security Auditing, Penetration Testing** |
+| 🤖 **AI & Innovations** | **Autonomous AI Agents, Prompt Engineering, LLM Pipeline Integrations** |
+| 📍 **Location / Availability** | **India — Open for Remote & On-Site Software Engineering Roles** |
 
 </div>
 
 <br/>
 
 <div align="center">
-  <img src="assets/divider.svg" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117,161b22,00ff66&height=3" width="100%" />
 </div>
 
 <br/>
 
 ---
 
-## 👤 <a id="-execute-cat-aboutmd"></a>Command 02: `$ cat about.md`
+## 👤 <a id="-explore-my-work"></a>About Me
 
 ```bash
-vignesh@ubuntu:~$ cat about.md
+vignesh@github:~$ cat about.md
 ```
 
-> **Final Year Computer Science & Engineering Student** specializing in **Cyber Security**. I engineer resilient, high-throughput backend services paired with intuitive frontend architectures and hardened security layers as a **Full Stack Developer**.
+> **Final Year Computer Science & Engineering Student** specializing in **Cyber Security**. I engineer resilient, high-throughput Java microservices paired with intuitive frontend architectures and hardened security layers.
 
 <br/>
 
 <details open>
-<summary><b>🔍 Click to Expand System Bio & Engineering Principles</b></summary>
+<summary><b>🔍 Click to expand Full Professional Bio & Philosophy</b></summary>
 
 <br/>
 
 ```text
 +-----------------------------------------------------------------------------------------+
-| TERMINAL DIAGNOSTICS & SYSTEM SUMMARY                                                  |
+| SYSTEM DIAGNOSTICS & SUMMARY                                                            |
 +-----------------------------------------------------------------------------------------+
-| [✓] BACKEND       : Java, Spring Boot, RESTful APIs, Hibernate/JPA, Microservices      |
-| [✓] FRONTEND      : Angular, React, Responsive UI, State Management (RxJS/Redux)        |
-| [✓] SECURITY      : Zero Trust Architecture, OWASP Top 10 Mitigation, Cryptography      |
-| [✓] AI WORKFLOWS  : Autonomous AI Agents, Prompt Engineering, LLM Integrations          |
-| [✓] DATABASE      : Relational Schema Optimization, MySQL, Firebase BaaS                |
+| [✓] ARCHITECTURE  : Microservices, Layered Clean Architecture, RESTful APIs            |
+| [✓] SECURITY      : Zero Trust, OWASP Top 10 Mitigation, Cryptographic Hashing          |
+| [✓] FRONTEND      : Component-Driven Design, Reactive State Management (RxJS/Redux)      |
+| [✓] PASSION       : High-Scale Systems, AI Workflow Automation, Continuous Learning      |
 +-----------------------------------------------------------------------------------------+
 ```
 
 - 🎓 **Education:** Final Year B.E. Computer Science Engineering (*Specialization: Cyber Security*)
-- 💻 **Core Role:** Full Stack Developer
-- ☕ **Backend Stack:** Java Ecosystem, Spring Boot Microservices, Data Structures & Algorithms
+- ☕ **Core Specialization:** Enterprise Java, Spring Boot Microservices, Data Structures & Algorithms
 - 🤖 **AI & Automation:** Building intelligent AI Agents, autonomous task workflows, and LLM integrations
-- 🎨 **Frontend Craftsmanship:** Creating sleek, user-centric web applications using Angular & React
+- 💻 **Frontend Craftsmanship:** Creating sleek, user-centric web applications using Angular & React
 - 🛡️ **Cyber Security Focus:** Vulnerability assessments, secure coding protocols, and system defense
 - 🌐 **Open Source & Growth:** Active contributor to developer communities, open-source projects & hackathons
 
@@ -158,22 +126,22 @@ vignesh@ubuntu:~$ cat about.md
 <br/>
 
 <div align="center">
-  <img src="assets/divider.svg" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117,161b22,00ff66&height=3" width="100%" />
 </div>
 
 <br/>
 
 ---
 
-## 🛠️ Command 03: `$ ls -la --group-directories-first skills/`
+## 🛠️ Tech Stack & Arsenal
 
 ```bash
-vignesh@ubuntu:~$ ls -la --group-directories-first skills/
+vignesh@github:~$ ls -la --group-directories-first skills/
 ```
 
 <div align="center">
 
-### ☕ `bin/languages/` (Languages & Core Runtimes)
+### ☕ Backend & Core Languages
 <a href="https://www.java.com/">
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
 </a>
@@ -192,7 +160,7 @@ vignesh@ubuntu:~$ ls -la --group-directories-first skills/
 
 <br/>
 
-### 🎨 `lib/frontend/` (UI Frameworks & Styling)
+### 🎨 Frontend Frameworks & UI
 <a href="https://angular.io/">
   <img src="https://img.shields.io/badge/Angular-DD0031?style=for-the-badge&logo=angular&logoColor=white" alt="Angular" />
 </a>
@@ -208,7 +176,7 @@ vignesh@ubuntu:~$ ls -la --group-directories-first skills/
 
 <br/>
 
-### 🗄️ `var/db/` (Databases & Cloud Storage)
+### 🗄️ Database & Cloud BaaS
 <a href="https://www.mysql.com/">
   <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
 </a>
@@ -218,7 +186,7 @@ vignesh@ubuntu:~$ ls -la --group-directories-first skills/
 
 <br/>
 
-### 🧰 `etc/tools/` (DevOps & Security Utilities)
+### 🧰 Developer Tools & Security Environment
 <a href="https://git-scm.com/">
   <img src="https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white" alt="Git" />
 </a>
@@ -240,22 +208,22 @@ vignesh@ubuntu:~$ ls -la --group-directories-first skills/
 <br/>
 
 <div align="center">
-  <img src="assets/divider.svg" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117,161b22,00ff66&height=3" width="100%" />
 </div>
 
 <br/>
 
 ---
 
-## 🚀 Command 04: `$ ./projects.sh --list-featured`
+## 🚀 Featured Showcase Projects
 
 ```bash
-vignesh@ubuntu:~$ ./projects.sh --list-featured
+vignesh@github:~$ git log --oneline --projects/
 ```
 
 <div align="center">
 
-| Project Module | Technology Stack | Status | Actions / Demo |
+| Project Card | Tech Badges | Status | Repository / Live |
 | :--- | :--- | :---: | :---: |
 | 🚜 **CropLedger Desk**<br/>*Blockchain-inspired Agricultural Ledger* | `Java` `Spring Boot`<br/>`MySQL` `React` | ![Production](https://img.shields.io/badge/STATUS-PRODUCTION-00FF66?style=flat-square) | [<img src="https://img.shields.io/badge/Code-181717?style=flat-square&logo=github&logoColor=white" />](https://github.com/Vignesh7778) [<img src="https://img.shields.io/badge/Demo-000000?style=flat-square&logo=vercel&logoColor=00FF66" />](https://new-portfolio-gold-alpha.vercel.app) |
 | 📚 **EduAura**<br/>*Interactive Learning & Analytics Platform* | `Angular` `Spring Boot`<br/>`Firebase` `MySQL` | ![Production](https://img.shields.io/badge/STATUS-PRODUCTION-00FF66?style=flat-square) | [<img src="https://img.shields.io/badge/Code-181717?style=flat-square&logo=github&logoColor=white" />](https://github.com/Vignesh7778) [<img src="https://img.shields.io/badge/Demo-000000?style=flat-square&logo=vercel&logoColor=00FF66" />](https://new-portfolio-gold-alpha.vercel.app) |
@@ -300,25 +268,20 @@ vignesh@ubuntu:~$ ./projects.sh --list-featured
 <br/>
 
 <div align="center">
-  <img src="assets/divider.svg" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117,161b22,00ff66&height=3" width="100%" />
 </div>
 
 <br/>
 
 ---
 
-## 📊 Command 05: `$ ./show_stats.sh --all`
+## 📊 GitHub Terminal Analytics
 
 ```bash
-vignesh@ubuntu:~$ ./show_stats.sh --user=Vignesh7778
+vignesh@github:~$ github stats --user=Vignesh7778 --all-metrics
 ```
 
 <div align="center">
-
-  <!-- Automated Contribution Snake SVG -->
-  <img src="https://raw.githubusercontent.com/Vignesh7778/Vignesh7778/output/github-contribution-grid-snake-dark.svg" alt="GitHub Contribution Snake" width="95%" />
-
-  <br/><br/>
 
   <!-- GitHub Trophies Widget -->
   <img src="https://github-profile-trophy.vercel.app/?username=Vignesh7778&theme=tokyonight&no-bg=true&margin-w=15&row=1" alt="GitHub Profile Trophies" />
@@ -345,17 +308,17 @@ vignesh@ubuntu:~$ ./show_stats.sh --user=Vignesh7778
 <br/>
 
 <div align="center">
-  <img src="assets/divider.svg" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117,161b22,00ff66&height=3" width="100%" />
 </div>
 
 <br/>
 
 ---
 
-## 💼 Command 06: `$ history | grep -E "(education|internship|hackathon|milestones)"`
+## 💼 Experience & Interactive Timeline
 
 ```bash
-vignesh@ubuntu:~$ history | grep -E "(education|internship|hackathon|milestones)"
+vignesh@github:~$ history | grep -E "(education|internship|hackathon|milestones)"
 ```
 
 <div align="center">
@@ -372,17 +335,17 @@ vignesh@ubuntu:~$ history | grep -E "(education|internship|hackathon|milestones)
 <br/>
 
 <div align="center">
-  <img src="assets/divider.svg" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117,161b22,00ff66&height=3" width="100%" />
 </div>
 
 <br/>
 
 ---
 
-## ⚡ Command 07: `$ top -b -n 1 -u vignesh | grep -i LEARNING`
+## ⚡ Currently Learning & Roadmap
 
 ```bash
-vignesh@ubuntu:~$ top -b -n 1 -u vignesh | grep -i LEARNING
+vignesh@github:~$ top -b -n 1 -u vignesh | grep -i LEARNING
 ```
 
 ```text
@@ -413,17 +376,17 @@ PID   USER      TASK                         PROGRESS                           
 <br/>
 
 <div align="center">
-  <img src="assets/divider.svg" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117,161b22,00ff66&height=3" width="100%" />
 </div>
 
 <br/>
 
 ---
 
-## 📜 Command 08: `$ ls -l certificates/`
+## 📜 Certificates & Credentials
 
 ```bash
-vignesh@ubuntu:~$ ls -l certificates/
+vignesh@github:~$ ls -l certificates/
 ```
 
 <div align="center">
@@ -464,17 +427,17 @@ vignesh@ubuntu:~$ ls -l certificates/
 <br/>
 
 <div align="center">
-  <img src="assets/divider.svg" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117,161b22,00ff66&height=3" width="100%" />
 </div>
 
 <br/>
 
 ---
 
-## 🌐 Command 09: `$ connect --all-networks`
+## 🌐 Connect & Coding Profiles
 
 ```bash
-vignesh@ubuntu:~$ connect --all-networks
+vignesh@github:~$ connect --all-platforms
 ```
 
 <div align="center">
@@ -509,17 +472,17 @@ vignesh@ubuntu:~$ connect --all-networks
 <br/>
 
 <div align="center">
-  <img src="assets/divider.svg" width="100%" />
+  <img src="https://capsule-render.vercel.app/api?type=rect&color=0d1117,161b22,00ff66&height=3" width="100%" />
 </div>
 
 <br/>
 
 ---
 
-## 💡 Command 10: `$ sudo hire me` & `$ exit`
+## 💡 Terminal Fun Fact & Quote
 
 ```bash
-vignesh@ubuntu:~$ echo $FUN_FACT
+vignesh@github:~$ echo $FUN_FACT
 ```
 
 ```text
@@ -529,25 +492,13 @@ vignesh@ubuntu:~$ echo $FUN_FACT
 <br/>
 
 ```bash
-vignesh@ubuntu:~$ sudo hire me
+vignesh@github:~$ sudo hire me
 ```
 
 ```text
 [sudo] password for recruiter: *********
-Access Granted. Initializing recruitment pipeline...
+Access Granted. Initializing contact pipeline...
 Status: Ready for technical interviews & high-impact engineering roles!
-```
-
-<br/>
-
-```bash
-vignesh@ubuntu:~$ exit
-logout
-Saving session...
-...copying shared history...
-...saving history...truncating history files...
-...completed.
-Closing connection to 127.0.0.1.
 ```
 
 <br/>
@@ -556,12 +507,12 @@ Closing connection to 127.0.0.1.
 
 <div align="center">
 
-<img src="assets/footer.svg" width="100%" alt="Footer Banner" />
+<img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d1117,50:161b22,100:00ff66&height=120&section=footer&text=Thanks%20For%20Visiting!%20%F0%9F%9A%80&fontSize=30&fontColor=00ff66" width="100%" alt="Footer Banner" />
 
 <br/>
 
 **Happy Coding 🚀**
 
-<sub>Engineered with ❤️ and Futuristic Terminal Aesthetics by [Vicky](https://github.com/Vignesh7778)</sub>
+<sub>Engineered with ❤️ and Linux Terminal Aesthetics by [Vignesh M](https://github.com/Vignesh7778)</sub>
 
 </div>
