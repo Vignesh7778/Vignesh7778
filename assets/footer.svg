@@ -1,35 +1,15 @@
-<svg fill="none" viewBox="0 0 950 160" xmlns="http://www.w3.org/2000/svg">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 120" width="100%" height="100%">
   <defs>
-    <linearGradient id="footer-bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" stop-color="#05070a"/>
-      <stop offset="50%" stop-color="#0b0f19"/>
-      <stop offset="100%" stop-color="#030508"/>
+    <linearGradient id="footerBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161B22"/>
+      <stop offset="100%" stop-color="#0D1117"/>
     </linearGradient>
-    <linearGradient id="footer-neon" x1="0%" y1="0%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="#00FF66"/>
-      <stop offset="50%" stop-color="#00D2FF"/>
-      <stop offset="100%" stop-color="#00FF66"/>
-    </linearGradient>
-    <filter id="footer-glow" x="-10%" y="-10%" width="120%" height="120%">
-      <feGaussianBlur stdDeviation="8" result="blur"/>
-      <feMerge>
-        <feMergeNode in="blur"/>
-        <feMergeNode in="SourceGraphic"/>
-      </feMerge>
-    </filter>
   </defs>
-
-  <rect width="950" height="160" rx="16" fill="url(#footer-bg-grad)"/>
-  
-  <!-- Glowing Waving Bottom Accent Path -->
-  <path d="M 0 100 Q 237.5 40 475 100 T 950 100 L 950 160 L 0 160 Z" fill="url(#footer-neon)" fill-opacity="0.15" filter="url(#footer-glow)"/>
-  <path d="M 0 110 Q 237.5 60 475 110 T 950 110" stroke="url(#footer-neon)" stroke-width="2" fill="none" filter="url(#footer-glow)"/>
-
-  <!-- Footer Text -->
-  <text x="475" y="65" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="14px" font-weight="700" fill="#ffffff" letter-spacing="2px">
-    ⚡ SYSTEM ONLINE // THANK YOU FOR VISITING ⚡
-  </text>
-  <text x="475" y="90" text-anchor="middle" font-family="'Inter', sans-serif" font-size="12px" font-weight="500" fill="#94a3b8">
-    Designed for High Performance, Security &amp; Enterprise Scalability
-  </text>
+  <style>
+    .footer-text { font-family: 'JetBrains Mono', monospace; font-size: 16px; fill: #00FF66; font-weight: bold; }
+    .subtext { font-family: monospace; font-size: 12px; fill: #8B949E; }
+  </style>
+  <rect width="1000" height="120" fill="url(#footerBg)" rx="8" stroke="#30363D" stroke-width="1"/>
+  <text x="500" y="52" text-anchor="middle" class="footer-text">THANKS FOR VISITING! 🚀</text>
+  <text x="500" y="82" text-anchor="middle" class="subtext">Engineered with ❤️ and Linux Terminal Aesthetics by Vicky</text>
 </svg>

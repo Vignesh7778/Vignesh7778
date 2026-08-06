@@ -1,0 +1,78 @@
+const fs = require('fs');
+const path = require('path');
+
+function generateWordmarkSVG() {
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 450 350" width="100%" height="100%">
+  <defs>
+    <linearGradient id="wmBorderGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D2FF"/>
+      <stop offset="100%" stop-color="#00FF66"/>
+    </linearGradient>
+    <linearGradient id="wmBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#161B22"/>
+      <stop offset="100%" stop-color="#0D1117"/>
+    </linearGradient>
+  </defs>
+  <style>
+    .wm-frame { stroke: url(#wmBorderGlow); stroke-width: 1.5; fill: url(#wmBg); filter: drop-shadow(0 0 6px rgba(0,210,255,0.3)); }
+    .header-text { font-family: 'JetBrains Mono', monospace; font-size: 12px; fill: #8B949E; }
+    
+    /* 3D Staggered Line Animations */
+    .wm-line { font-family: 'JetBrains Mono', monospace; font-weight: bold; font-size: 12px; fill: #00D2FF; opacity: 0; animation: wmFade 0.6s ease-forward forwards; }
+    .wm-1 { animation-delay: 0.3s; }
+    .wm-2 { animation-delay: 0.6s; }
+    .wm-3 { animation-delay: 0.9s; }
+    .wm-4 { animation-delay: 1.2s; }
+    .wm-5 { animation-delay: 1.5s; }
+    .wm-6 { animation-delay: 1.8s; }
+    .wm-7 { animation-delay: 2.1s; fill: #00FF66; }
+    .wm-8 { animation-delay: 2.4s; fill: #FFFFFF; }
+
+    @keyframes wmFade {
+      0% { opacity: 0; transform: translateX(-10px); }
+      100% { opacity: 1; transform: translateX(0); }
+    }
+
+    /* Pulse Glow */
+    .pulse-glow { animation: pulse 3s ease-in-out infinite alternate; }
+    @keyframes pulse { 0% { fill: #00D2FF; } 100% { fill: #00FF66; } }
+
+    /* Blinking Cursor */
+    .blinker { fill: #00FF66; animation: blink 1s step-start infinite; }
+    @keyframes blink { 50% { opacity: 0; } }
+  </style>
+
+  <!-- Terminal Window Frame -->
+  <rect x="5" y="5" width="440" height="340" rx="10" class="wm-frame"/>
+  
+  <!-- Terminal Top Bar -->
+  <rect x="5" y="5" width="440" height="30" rx="10" fill="#21262D"/>
+  <circle cx="22" cy="20" r="5" fill="#FF5F56"/>
+  <circle cx="38" cy="20" r="5" fill="#FFBD2E"/>
+  <circle cx="54" cy="20" r="5" fill="#27C93F"/>
+  <text x="72" y="24" class="header-text">vicky@github: ~$ ./wordmark.sh --3d</text>
+
+  <!-- Animated 3D Wordmark Content -->
+  <g transform="translate(25, 45)">
+    <text x="10" y="45" class="wm-line wm-1">      SSSSSS        SSSSSS   SSSSSS    +SSSSS</text>
+    <text x="10" y="65" class="wm-line wm-2">    SSSSSSSS      SSSSSS   +SSSSSS    -SSSSS</text>
+    <text x="10" y="85" class="wm-line wm-3">   SSSSSSSS      SSSSSS   SSSSSS     -SSSSS</text>
+    <text x="10" y="105" class="wm-line wm-4">  SSSSSSSS      SSSSSS SSSSSS      -SSSSS</text>
+    <text x="10" y="125" class="wm-line wm-5"> SSSSSSSSS     SSSSSS+SSSSSS      -SSSSS</text>
+    <text x="10" y="145" class="wm-line wm-6">SSSSSS+SSSS   SSSSSSSSSSSSS      -SSSSS</text>
+    <text x="10" y="165" class="wm-line wm-6">SSSSSSSSSSSSS   SSSSSSSS         -SSSSS</text>
+    <text x="10" y="185" class="wm-line wm-6"> SSSSSSS SSSSS    SSSSSS         -SSSSS</text>
+
+    <!-- Subtitle Commands & Execution status -->
+    <text x="10" y="225" class="wm-line wm-7">===================================================</text>
+    <text x="10" y="250" class="wm-line wm-8">&gt; EXECUTING: FULL STACK ARCHITECTURE PIPELINE</text>
+    <text x="10" y="275" class="wm-line wm-8">&gt; SECURITY : CYBERSECURITY HARDENED <tspan class="blinker">█</tspan></text>
+  </g>
+</svg>`;
+
+  const outputPath = path.join(__dirname, '../assets/wordmark.svg');
+  fs.writeFileSync(outputPath, svg, 'utf8');
+  console.log(`[+] Generated animated wordmark.svg successfully at ${outputPath}`);
+}
+
+generateWordmarkSVG();

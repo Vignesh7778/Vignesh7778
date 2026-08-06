@@ -1,4 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="100%" height="100%">
+const fs = require('fs');
+const path = require('path');
+
+function generateTerminalSVG() {
+  const timestamp = new Date().toISOString().split('T')[0];
+  const svg = `<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" width="100%" height="100%">
   <defs>
     <linearGradient id="termBg" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#161B22"/>
@@ -40,7 +45,7 @@
     <text y="0" class="green line-anim l1">vicky@ubuntu:~$ systemctl status developer-profile.service</text>
     <text y="24" class="dim line-anim l2">● developer-profile.service - Vicky Profile Daemon</text>
     <text y="44" class="line-anim l3">   Loaded: <tspan class="green">loaded</tspan> (/etc/systemd/system/developer-profile.service; enabled)</text>
-    <text y="64" class="line-anim l4">   Active: <tspan class="green">active (running)</tspan> since 2026-08-06</text>
+    <text y="64" class="line-anim l4">   Active: <tspan class="green">active (running)</tspan> since ${timestamp}</text>
     <text y="84" class="line-anim l5">   Tasks: 42 (limit: 4915)</text>
     <text y="104" class="line-anim l6">   Memory: 128.4M [████████████████████████████████░░░] 88%</text>
     <text y="130" class="cyan line-anim l7">------------------------------------------------------------------------</text>
@@ -50,4 +55,11 @@
     <text y="218" class="line-anim l8"><tspan class="green">[✓] SECURITY VECTOR</tspan> : Application Hardening, Cryptography, OWASP Audits</text>
     <text y="240" class="yellow line-anim l9">vicky@ubuntu:~$ <tspan class="blinker">█</tspan></text>
   </g>
-</svg>
+</svg>`;
+
+  const outputPath = path.join(__dirname, '../assets/terminal.svg');
+  fs.writeFileSync(outputPath, svg, 'utf8');
+  console.log(`[+] Generated animated terminal.svg successfully at ${outputPath}`);
+}
+
+generateTerminalSVG();
