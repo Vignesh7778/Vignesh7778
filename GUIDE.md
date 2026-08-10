@@ -38,7 +38,7 @@ Vignesh7778/
 7. **`assets/icons/`**: Directory containing vector icon assets (`security.svg`, `README.md`) for technical branding.
 8. **Readme Typing SVG**: Dynamic animated typing effect displaying current roles and focus (`https://readme-typing-svg.demolab.com`).
 9. **GitHub Profile Views Counter**: Real-time counter badge by Komarev (`https://komarev.com/ghpvc/`).
-10. **GitHub Readme Stats & Top Languages**: Dark-themed analytics cards with cyan and green accents (`https://github-readme-stats.vercel.app`).
+10. **GitHub Readme Stats & Top Languages**: Dark-themed analytics cards with cyan and green accents (`https://github-stats-extended.vercel.app`).
 11. **GitHub Streak Stats**: Daily contribution streak tracking widget (`https://github-readme-streak-stats.herokuapp.com`).
 12. **Contribution Snake SVG**: Automated vector animation eating contribution dots generated daily via GitHub Actions (`output/github-contribution-grid-snake-dark.svg`).
 13. **Shields.io Badges**: Standardized tech stack, category pills, and social badges (`https://img.shields.io`).

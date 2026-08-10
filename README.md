@@ -281,14 +281,14 @@ vignesh@github:~$ github stats --user=Vignesh7778 --all-metrics
 <div align="center">
 
   <!-- GitHub Trophies Widget -->
-  <img src="https://github-profile-trophy.vercel.app/?username=Vignesh7778&theme=tokyonight&no-bg=true&margin-w=15&row=1" alt="GitHub Profile Trophies" />
+  <img src="https://github-profile-repo.vercel.app/?username=Vignesh7778&theme=tokyonight&no-bg=true&margin-w=15&row=1" alt="GitHub Profile Trophies" />
 
   <br/><br/>
 
   <!-- Stats & Top Languages Side by Side -->
-  <img src="https://github-readme-stats.vercel.app/api?username=Vignesh7778&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00ff66&icon_color=00d2ff&text_color=c9d1d9" alt="Vignesh's GitHub Stats" height="175" />
+  <img src="https://github-stats-extended.vercel.app/api?username=Vignesh7778&show_icons=true&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00ff66&icon_color=00d2ff&text_color=c9d1d9" alt="Vignesh's GitHub Stats" height="175" />
   &nbsp;
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=Vignesh7778&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00ff66&text_color=c9d1d9" alt="Top Languages" height="175" />
+  <img src="https://github-stats-extended.vercel.app/api/top-langs/?username=Vignesh7778&layout=compact&theme=tokyonight&hide_border=true&bg_color=0d1117&title_color=00ff66&text_color=c9d1d9" alt="Top Languages" height="175" />
 
   <br/><br/>
 
