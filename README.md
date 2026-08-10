@@ -145,9 +145,6 @@ vignesh@github:~$ ls -la --group-directories-first skills/
 <a href="https://www.java.com/">
   <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" alt="Java" />
 </a>
-<a href="https://spring.io/projects/spring-boot">
-  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white" alt="Spring Boot" />
-</a>
 <a href="https://www.python.org/">
   <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
 </a>
